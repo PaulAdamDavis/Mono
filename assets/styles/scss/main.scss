@@ -1,0 +1,13 @@
+$accent: #4A90E2;
+$accent_dark: darken($accent, 10%);
+
+$black: #000000;
+$grey: #9B9B9B;
+$gray: $grey; // Hello, everyone
+
+$header_sizes: 3.6, 3.2, 2.9, 2.6, 2.3, 2.0; // h1-h6 in `rem`
+
+@import "__normalize";
+
+@import "_layout";
+@import "_type";

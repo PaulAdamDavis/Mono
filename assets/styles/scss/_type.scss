@@ -1,0 +1,47 @@
+//
+// Base type
+// --------------------------------------------------
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, sans-sefif;
+    font-size: 1.6rem;
+    line-height: 1.625;
+    font-weight: 300;
+}
+
+
+//
+// Headers
+// --------------------------------------------------
+
+@for $i from 1 through 6 {
+    .h#{$i},
+    h#{$i}{
+        font-size: nth($header_sizes, $i);
+    }
+}
+
+
+//
+// Links
+// --------------------------------------------------
+
+a {
+    text-decoration: none;
+    transition: color 0.1s linear;
+
+    &:link,
+    &:visited {
+        color: $accent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent_dark;
+    }
+}

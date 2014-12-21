@@ -1,0 +1,17 @@
+{
+    "name": "Mono",
+    "version": "1.0.0",
+    "description": "A minimal theme for Ghost",
+    "author" : "Paul Davis",
+    "homepage" : "https://github.com/PaulAdamDavis",
+    "repository" : {
+        "type": "git",
+        "url": "git://github.com/PaulAdamDavis/Mono.git"
+    },
+    "dependencies": {
+        "grunt": "~0.4.5",
+        "grunt-autoprefixer": "1.0.1",
+        "grunt-sass": "~0.16.1",
+        "grunt-contrib-watch": "~0.6.1"
+    }
+}
