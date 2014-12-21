@@ -2,7 +2,62 @@ main {
     padding: 0 15px;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 720px;
+//
+// Angle Header & Footer Bars
+// --------------------------------------------------
+
+.site-header .angle,
+.site-footer .angle {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 44px;
+
+    &:before {
+        content: '';
+        height: 50px;
+        transform: rotate(2deg);
+        position: absolute;
+        background: $accent;
+        left: -20px;
+        right: -20px;
+    }
+}
+
+.site-header .angle:before {
+    top: -26px;
+}
+
+.site-footer .angle:before {
+    top: 20px;
+}
+
+.site-footer {
+    .wrapper {
+        padding-top: 20px;
+        margin: 0 50px 50px;
+        border-top: 1px solid $grey_light;
+        line-height: 1;
+    }
+
+    a {
+        &:link,
+        &:visited {
+            color: $black;
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            color: $accent_dark;
+        }
+    }
+
+    .copyright {
+        font-size: 1.4rem;
+    }
+
+    .poweredby {
+        font-size: 1.2rem;
+    }
 }

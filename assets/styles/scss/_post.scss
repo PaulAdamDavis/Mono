@@ -1,0 +1,25 @@
+.post {
+
+    h1 {
+        margin-bottom: 0;
+
+        a {
+            &:link,
+            &:visited {
+                color: $black;
+            }
+
+            &:active,
+            &:focus,
+            &:hover {
+                color: $accent_dark;
+            }
+        }
+    }
+
+    .meta {
+        color: $grey;
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+    }
+}

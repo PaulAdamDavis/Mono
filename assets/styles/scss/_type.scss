@@ -22,6 +22,7 @@ body {
     .h#{$i},
     h#{$i}{
         font-size: nth($header_sizes, $i);
+        line-height: 1.1;
     }
 }
 

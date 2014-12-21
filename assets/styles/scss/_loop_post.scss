@@ -1,0 +1,22 @@
+.loop-post {
+    border-bottom: 1px solid $grey_light;
+
+    width: 100%;
+    max-width: ($content_width + 200);
+    margin: 0 auto;
+
+    .post-header,
+    .post-excerpt {
+        width: 100%;
+        max-width: $content_width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .post-header {
+        margin-top: 7.5rem;
+    }
+    .post-excerpt {
+        margin-bottom: 7.5rem;
+    }
+
+}

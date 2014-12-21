@@ -23,14 +23,22 @@
 </head>
 <body class="{{body_class}}">
 
+    <header class="site-header">
+        <span class="angle"></span>
+    </header>
+
     {{! Everything else gets inserted here }}
     <main>
         {{{body}}}
     </main>
 
     <footer class="site-footer clearfix">
-         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        <div class="wrapper">
+            <small class="copyright"><a href="{{@blog.url}}"> &copy; {{date format="YYYY"}} {{@blog.title}}</a></small>
+            <br>
+            <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></span>
+        </div>
+        <span class="angle"></span>
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
