@@ -3,6 +3,23 @@ var configureGrunt;
 configureGrunt = function (grunt) {
     grunt.initConfig({
 
+        pkg: grunt.file.readJSON('package.json'),
+
+        compress: {
+            main: {
+                options: {
+                    archive: 'build/pad_mono_<%= pkg.version %>_.zip',
+                    mode: 'zip',
+                    pretty: true
+                },
+                expand: true,
+                cwd: './',
+                // src: ['!assets/styles/scss/**', '!node_modules/**', '!npm-debug.log', '!.gitignore', '!Gruntfile.js', '**/*'],
+                src: ['**/*', '!**/build/**', '!**/node_modules/**', '!**/assets/styles/scss/**', '!npm-debug.log', '!.gitignore', '!Gruntfile.js'],
+                dest: ''
+            }
+        },
+
         sass: {
             dist: {
                 options: {
@@ -38,8 +55,10 @@ configureGrunt = function (grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-compress');
 
     grunt.registerTask('styles', ['watch']);
+    grunt.registerTask('makezip', ['compress']);
 };
 
 module.exports = configureGrunt;
