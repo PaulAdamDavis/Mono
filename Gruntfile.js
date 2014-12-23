@@ -14,7 +14,6 @@ configureGrunt = function (grunt) {
                 },
                 expand: true,
                 cwd: './',
-                // src: ['!assets/styles/scss/**', '!node_modules/**', '!npm-debug.log', '!.gitignore', '!Gruntfile.js', '**/*'],
                 src: ['**/*', '!**/build/**', '!**/node_modules/**', '!**/assets/styles/scss/**', '!npm-debug.log', '!.gitignore', '!Gruntfile.js'],
                 dest: ''
             }
