@@ -19,9 +19,10 @@ body {
 // --------------------------------------------------
 
 @for $i from 1 through 6 {
+    $header_size: nth($header_sizes, $i);
     .h#{$i},
     h#{$i}{
-        font-size: nth($header_sizes, $i);
+        font-size: #{$header_size}rem;
         line-height: 1.1;
     }
 }
@@ -44,5 +45,29 @@ a {
     &:focus,
     &:active {
         color: $accent_dark;
+    }
+}
+
+
+//
+// Lists
+// --------------------------------------------------
+ul, ol {
+    ul, ol {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+:target {
+  animation: target_highlight 2s ease;
+}
+
+@keyframes target_highlight {
+    from {
+        box-shadow: 0px 0px 60px 50px orange, inset 0px 0px 100px 20px orange;
+    }
+    to {
+        box-shadow: none;
     }
 }

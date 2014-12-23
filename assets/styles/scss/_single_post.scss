@@ -1,0 +1,119 @@
+.single-post {
+    width: 100%;
+    max-width: ($content_width + 200);
+    margin: 0 auto;
+
+
+    .post-header,
+    .post-content {
+        width: 100%;
+        max-width: $content_width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .post-header {
+        padding-top: 7rem;
+        margin-bottom: 5rem;
+    }
+    .post-content {
+        padding-bottom: 7rem;
+    }
+
+    .post-content hr {
+        display: block;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        max-width: 100%;
+
+        @media (max-width: ($content_width + 140)) {
+            width: calc(100% + 30px);
+        }
+        @media (min-width: ($content_width + 140)) and (max-width: ($content_width + 239)) {
+            width: calc(100% + 100px);
+        }
+        @media (min-width: ($content_width + 240)) and (max-width: ($content_width + 339)) {
+            width: calc(100% + 200px);
+        }
+        @media (min-width: ($content_width + 340)) {
+            width: calc(100% + 250px);
+        }
+    }
+
+    .post-content img {
+        display: block;
+        margin: 5rem auto;
+        max-width: 100%;
+    }
+
+    .post-content {
+        img.big {
+            @media (max-width: ($content_width + 140)) {
+                max-width: calc(100% + 30px);
+                margin-left: -15px;
+            }
+            @media (min-width: ($content_width + 140)) and (max-width: ($content_width + 239)) {
+                max-width: calc(100% + 100px);
+                margin-left: -50px;
+            }
+            @media (min-width: ($content_width + 240)) and (max-width: ($content_width + 339)) {
+                max-width: calc(100% + 200px);
+                margin-left: -100px;
+            }
+            @media (min-width: ($content_width + 340)) {
+                max-width: calc(100% + 250px);
+                margin-left: -125px;
+            }
+        }
+    }
+
+    .post-content {
+        h2 {
+            margin-top: 5rem;
+        }
+    }
+
+    .post-footer {
+        border-top: 1px solid $grey_light;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .footnotes {
+        margin-top: 5rem;
+        padding-top: 2rem;
+        border-top: 1px solid $grey_light;
+        font-size: 90%;
+        color: $grey;
+        transition: color 0.1s linear;
+
+        &:hover {
+            &, a {
+                color: $grey_dark;
+            }
+        }
+
+        a {
+            color: $grey;
+            position: relative;
+            top: 1px;
+            right: -2px;
+
+            &:link,
+            &:visited {
+                color: $grey;
+            }
+
+            &:active,
+            &:hover,
+            &:focus {
+                color: $accent_dark;
+            }
+        }
+
+        li,
+        p {
+            margin: 0;
+        }
+    }
+
+}

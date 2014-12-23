@@ -1,0 +1,64 @@
+.pagination {
+    text-align: center;
+    max-width: $content_width;
+    margin: 75px auto;
+
+    a {
+        &:link,
+        &:visited {
+            color: $grey;
+        }
+
+        &:active,
+        &:hover,
+        &:focus {
+            color: $grey_dark;
+            span {
+                background: $grey_dark;
+            }
+        }
+    }
+
+    .newer-posts,
+    .older-posts {
+        display: inline-block;
+        line-height: 3rem;
+        position: relative;
+
+        span {
+            position: absolute;
+            top: -2px;
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            line-height: 1.13;
+            font-size: 3rem;
+            background: $grey_light;
+            color: #fff;
+            border-radius: 3rem;
+            transition: background 0.1s linear;
+        }
+    }
+
+    .newer-posts {
+        float: left;
+        padding-left: 40px;
+        span {
+            left: 0;
+        }
+    }
+
+    .older-posts {
+        float: right;
+        padding-right: 40px;
+        span {
+            right: 0;
+        }
+    }
+
+    .page-number {
+        display: inline-block;
+        line-height: 3rem;
+        color: $grey_dark;
+    }
+}

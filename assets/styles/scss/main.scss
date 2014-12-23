@@ -3,7 +3,8 @@ $accent_dark: darken($accent, 10%);
 
 $black: #000000;
 
-$grey: #9B9B9B;
+$grey_dark: #9B9B9B;
+$grey: #B2B2B2;
 $grey_light: #EDEDED;
 
 $header_sizes: 3.6, 3.2, 2.9, 2.6, 2.3, 2.0; // h1-h6 in `rem`
@@ -15,5 +16,9 @@ $content_width: 620px;
 @import "_layout";
 @import "_type";
 
+@import "_header";
+@import "_pagination";
+
 @import "_post";
 @import "_loop_post";
+@import "_single_post";

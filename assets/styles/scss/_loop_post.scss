@@ -1,9 +1,15 @@
 .loop-post {
-    border-bottom: 1px solid $grey_light;
-
     width: 100%;
     max-width: ($content_width + 200);
     margin: 0 auto;
+
+    &:first-of-type {
+        border-top: 1px solid $grey_light;
+    }
+
+    &:last-of-type {
+        border-bottom: 1px solid $grey_light;
+    }
 
     .post-header,
     .post-excerpt {
@@ -13,10 +19,10 @@
         margin-right: auto;
     }
     .post-header {
-        margin-top: 7.5rem;
+        padding-top: 7rem;
     }
     .post-excerpt {
-        margin-bottom: 7.5rem;
+        padding-bottom: 7rem;
     }
 
 }
