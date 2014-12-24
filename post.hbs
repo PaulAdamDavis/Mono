@@ -33,23 +33,25 @@
             {{#author}}
 
                 {{#if image}}
-                <figure class="author-image">
-                    <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-                </figure>
+                    <figure class="author-image">
+                        <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                    </figure>
                 {{/if}}
 
                 <section class="author">
                     <h4><a href="{{url}}">{{name}}</a></h4>
 
-                    {{#if bio}}
-                        <p>{{bio}}</p>
-                    {{else}}
-                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                    {{/if}}
-                    <div class="author-meta">
+                    <p class="author-meta">
                         {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                        {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                    </div>
+                        {{#if website}}<span class="author-link icon-link"><a href="{{website}}" class="js-remove-domain-schema">{{website}}</a></span>{{/if}}
+                    </p>
+
+                    {{#if bio}}
+                        <p class="author-bio">{{bio}}</p>
+                    {{else}}
+                        <p class="author-bio">Read <a href="{{url}}">more posts</a> by this author.</p>
+                    {{/if}}
+
                 </section>
 
             {{/author}}

@@ -35,7 +35,15 @@ main {
 .site-footer {
     .wrapper {
         padding-top: 20px;
-        margin: 0 50px 40px;
+        // margin: 0 50px 40px;
+
+        @media (max-width: ($content_width + 199)) {
+            margin: 0 20px 40px;
+        }
+        @media (min-width: ($content_width + 200)) {
+            margin: 0 50px 40px;
+        }
+
         border-top: 1px solid $grey_light;
         line-height: 1;
     }
@@ -66,4 +74,15 @@ main {
     content: "";
     display: table;
     clear: both;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

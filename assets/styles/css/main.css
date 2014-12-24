@@ -390,27 +390,43 @@ main {
 /* line 36, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .site-footer .wrapper {
   padding-top: 20px;
-  margin: 0 50px 40px;
   border-top: 1px solid #EDEDED;
   line-height: 1; }
-/* line 45, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+  @media (max-width: 819px) {
+    .site-footer .wrapper {
+      margin: 0 20px 40px; } }
+  @media (min-width: 820px) {
+    .site-footer .wrapper {
+      margin: 0 50px 40px; } }
+/* line 53, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .site-footer a:link, .site-footer a:visited {
   color: #000000; }
-/* line 51, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+/* line 59, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .site-footer a:active, .site-footer a:focus, .site-footer a:hover {
   color: #2275d7; }
-/* line 56, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+/* line 64, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .site-footer .copyright {
   font-size: 1.4rem; }
-/* line 60, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+/* line 68, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .site-footer .poweredby {
   font-size: 1.2rem; }
 
-/* line 65, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+/* line 73, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
+
+/* line 79, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
 
 /* line 5, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_type */
 html {
@@ -579,67 +595,72 @@ ul ul, ul ol, ol ul, ol ol {
   margin-top: 0.5rem;
   font-size: 1.4rem; }
 
-/* line 1, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_loop_post */
+/* line 1, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_loop */
 .loop-post {
   width: 100%;
   max-width: 820px;
   margin: 0 auto; }
-  /* line 6, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_loop_post */
+  /* line 6, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_loop */
   .loop-post:first-of-type {
     border-top: 1px solid #EDEDED; }
-  /* line 10, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_loop_post */
+  /* line 10, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_loop */
   .loop-post:last-of-type {
     border-bottom: 1px solid #EDEDED; }
-  /* line 15, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_loop_post */
+  /* line 15, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_loop */
   .loop-post .post-header, .loop-post .post-excerpt {
     width: 100%;
     max-width: 620px;
     margin-left: auto;
     margin-right: auto; }
-  /* line 21, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_loop_post */
+  /* line 21, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_loop */
   .loop-post .post-header {
     padding-top: 7rem; }
-  /* line 24, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_loop_post */
+  /* line 24, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_loop */
   .loop-post .post-excerpt {
     padding-bottom: 7rem; }
 
-/* line 1, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+/* line 1, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
 .single-post {
   width: 100%;
   max-width: 820px;
   margin: 0 auto; }
-  /* line 8, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+  /* line 8, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
   .single-post .post-header, .single-post .post-content {
     width: 100%;
     max-width: 620px;
     margin-left: auto;
     margin-right: auto; }
-  /* line 14, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+  /* line 14, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
   .single-post .post-header {
     padding-top: 7rem;
     margin-bottom: 5rem; }
-  /* line 18, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+  /* line 18, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
   .single-post .post-content {
     padding-bottom: 7rem; }
-  /* line 22, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
-  .single-post .post-content hr {
+  /* line 23, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+  .single-post .post-content hr, .single-post .post-content pre {
     display: block;
     margin-top: 5rem;
     margin-bottom: 5rem;
     max-width: 100%; }
-    @media (max-width: 760px) {
-      .single-post .post-content hr {
-        width: calc(100% + 30px); } }
-    @media (min-width: 760px) and (max-width: 859px) {
-      .single-post .post-content hr {
-        width: calc(100% + 100px); } }
-    @media (min-width: 860px) and (max-width: 959px) {
-      .single-post .post-content hr {
-        width: calc(100% + 200px); } }
-    @media (min-width: 960px) {
-      .single-post .post-content hr {
-        width: calc(100% + 250px); } }
-  /* line 42, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+  /* line 31, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+  .single-post .post-content pre {
+    background: #f5f5f5;
+    padding: 1rem 1.5rem;
+    font-size: 90%; }
+  @media (max-width: 760px) {
+    .single-post .post-content hr {
+      width: calc(100% + 30px); } }
+  @media (min-width: 760px) and (max-width: 859px) {
+    .single-post .post-content hr {
+      width: calc(100% + 100px); } }
+  @media (min-width: 860px) and (max-width: 959px) {
+    .single-post .post-content hr {
+      width: calc(100% + 200px); } }
+  @media (min-width: 960px) {
+    .single-post .post-content hr {
+      width: calc(100% + 250px); } }
+  /* line 53, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
   .single-post .post-content img {
     display: block;
     margin: 5rem auto;
@@ -660,15 +681,10 @@ ul ul, ul ol, ol ul, ol ol {
     .single-post .post-content img.big {
       max-width: calc(100% + 250px);
       margin-left: -125px; } }
-  /* line 70, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+  /* line 81, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
   .single-post .post-content h2 {
     margin-top: 5rem; }
-  /* line 75, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
-  .single-post .post-footer {
-    border-top: 1px solid #EDEDED;
-    padding-top: 5rem;
-    padding-bottom: 5rem; }
-  /* line 81, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+  /* line 86, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
   .single-post .footnotes {
     margin-top: 5rem;
     padding-top: 2rem;
@@ -677,22 +693,60 @@ ul ul, ul ol, ol ul, ol ol {
     color: #B2B2B2;
     -webkit-transition: color 0.1s linear;
             transition: color 0.1s linear; }
-    /* line 90, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+    /* line 95, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
     .single-post .footnotes:hover, .single-post .footnotes:hover a {
       color: #9B9B9B; }
-    /* line 95, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+    /* line 100, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
     .single-post .footnotes a {
       color: #B2B2B2;
       position: relative;
       top: 1px;
       right: -2px; }
-      /* line 102, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+      /* line 107, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
       .single-post .footnotes a:link, .single-post .footnotes a:visited {
         color: #B2B2B2; }
-      /* line 108, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+      /* line 113, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
       .single-post .footnotes a:active, .single-post .footnotes a:hover, .single-post .footnotes a:focus {
         color: #2275d7; }
-    /* line 114, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_single_post */
+    /* line 119, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
     .single-post .footnotes li, .single-post .footnotes p {
       margin: 0; }
+  /* line 124, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+  .single-post .post-footer {
+    text-align: center;
+    border-top: 1px solid #EDEDED;
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
+  /* line 131, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+  .single-post .author-image {
+    margin: 0; }
+    /* line 133, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+    .single-post .author-image .img {
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+      display: inline-block;
+      background-size: cover;
+      background-position: center center; }
+  /* line 144, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+  .single-post .author h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 2.1rem; }
+    /* line 152, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+    .single-post .author h4 a:link, .single-post .author h4 a:visited {
+      color: #000000; }
+    /* line 158, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+    .single-post .author h4 a:active, .single-post .author h4 a:hover, .single-post .author h4 a:focus {
+      color: #2275d7; }
+  /* line 164, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+  .single-post .author .author-meta {
+    font-size: 1.4rem;
+    color: #B2B2B2; }
+  /* line 169, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_post_single */
+  .single-post .author .author-bio {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto; }
 /*# sourceMappingURL=main.css.map */
