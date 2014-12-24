@@ -1,7 +1,13 @@
 .home-header {
     max-width: 540px;
-    margin: 160px auto;
     text-align: center;
+
+    @media (max-width: ($content_width + 199)) {
+        margin: 100px auto;
+    }
+    @media (min-width: ($content_width + 200)) {
+        margin: 160px auto;
+    }
 
     h1 {
         font-size: 3rem;

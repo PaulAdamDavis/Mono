@@ -11,6 +11,24 @@
         border-bottom: 1px solid $grey_light;
     }
 
+    .post-header {
+        .img {
+            width: 100%;
+            border-radius: 3px;
+            background-size: cover;
+            display: block;
+            overflow: hidden;
+            height: 0;
+            padding-bottom: 50%;
+            background-position: center center;
+            img {
+                width: 100%;
+                display: block;
+                opacity: 0;
+            }
+        }
+    }
+
     .post-header,
     .post-excerpt {
         width: 100%;

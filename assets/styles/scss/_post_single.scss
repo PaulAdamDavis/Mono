@@ -12,8 +12,14 @@
         margin-right: auto;
     }
     .post-header {
-        padding-top: 7rem;
         margin-bottom: 5rem;
+
+        @media (max-width: ($content_width + 199)) {
+            padding-top: 4rem;
+        }
+        @media (min-width: ($content_width + 200)) {
+            padding-top: 7rem;
+        }
     }
     .post-content {
         padding-bottom: 7rem;
@@ -32,6 +38,7 @@
         background: #f5f5f5;
         padding: 1rem 1.5rem;
         font-size: 90%;
+        line-height: 1.8;
     }
 
     .post-content hr {

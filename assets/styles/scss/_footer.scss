@@ -1,0 +1,36 @@
+.site-footer {
+    .wrapper {
+        padding-top: 20px;
+
+        @media (max-width: ($content_width + 199)) {
+            margin: 0 20px 40px;
+        }
+        @media (min-width: ($content_width + 200)) {
+            margin: 0 50px 40px;
+        }
+
+        border-top: 1px solid $grey_light;
+        line-height: 1;
+    }
+
+    a {
+        &:link,
+        &:visited {
+            color: $black;
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            color: $accent_dark;
+        }
+    }
+
+    .copyright {
+        font-size: 1.4rem;
+    }
+
+    .poweredby {
+        font-size: 1.2rem;
+    }
+}
