@@ -29,6 +29,21 @@
         }
     }
 
+    &.featured {
+        .post-header .img {
+            padding-bottom: 70%;
+
+            @media (min-width: ($content_width + 140)) and (max-width: ($content_width + 239)) {
+                width: calc(100% + 100px);
+                margin-left: -50px;
+            }
+            @media (min-width: ($content_width + 240)) {
+                width: calc(100% + 200px);
+                margin-left: -100px;
+            }
+        }
+    }
+
     .post-header,
     .post-excerpt {
         width: 100%;

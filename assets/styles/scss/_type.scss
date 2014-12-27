@@ -71,3 +71,25 @@ ul, ol {
         box-shadow: none;
     }
 }
+
+
+//
+// Code
+// --------------------------------------------------
+
+code,
+pre {
+    font-family: Monaco, Consolas, "Lucida Console", monospace, monospace;
+    font-size: 95%;
+}
+
+pre {
+    background: #f5f5f5;
+    padding: 0.8rem 1.4rem 0.7rem;
+    line-height: 1.8;
+}
+
+p code {
+    color: $red;
+    font-size: 95%;
+}
