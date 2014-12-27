@@ -23,3 +23,24 @@
         margin-top: 0;
     }
 }
+
+.blog-link,
+.blog-logo {
+    position: absolute;
+    top: 27px;
+    left: 20px;
+}
+
+.blog-logo {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100px;
+
+    img {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+}

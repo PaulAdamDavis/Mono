@@ -362,31 +362,20 @@ main {
   padding: 0 15px; }
 
 /* line 10, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
-.site-header .angle, .site-footer .angle {
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid; }
+.site-header {
+  border-top: 8px solid #4A90E2; }
 
-/* line 17, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
-.site-header .angle {
-  border-width: 0 100vw 40px 0;
-  border-color: transparent #4A90E2 transparent transparent;
-  padding-top: 5px; }
+/* line 14, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+.site-footer {
+  border-bottom: 16px solid #4A90E2; }
 
 /* line 23, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
-.site-footer .angle {
-  border-width: 45px 0 0 100vw;
-  border-color: transparent transparent transparent #4A90E2;
-  padding-bottom: 5px; }
-
-/* line 29, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-/* line 35, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
+/* line 29, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_layout */
 .hidden {
   position: absolute;
   width: 1px;
@@ -516,6 +505,25 @@ p code {
     line-height: 1.7;
     color: #B2B2B2;
     margin-top: 0; }
+
+/* line 28, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_header */
+.blog-link, .blog-logo {
+  position: absolute;
+  top: 27px;
+  left: 20px; }
+
+/* line 34, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_header */
+.blog-logo {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100px; }
+  /* line 41, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_header */
+  .blog-logo img {
+    width: 1px;
+    height: 1px;
+    opacity: 0; }
 
 /* line 2, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_footer */
 .site-footer .wrapper {

@@ -24,7 +24,15 @@
 <body class="{{body_class}}">
 
     <header class="site-header">
-        <span class="angle"></span>
+        {{^is "home"}}
+            {{#if @blog.logo}}
+                <a class="blog-logo" href="{{@blog.url}}" style="background-image: url({{@blog.logo}});">
+                    <img src="{{@blog.logo}}" alt="Blog Logo" />
+                </a>
+            {{else}}
+                <a href="{{@blog.url}}" class="blog-link">&lsaquo; Home</a>
+            {{/if}}
+        {{/is}}
     </header>
 
     {{! Everything else gets inserted here }}
@@ -38,7 +46,6 @@
             <br>
             <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></span>
         </div>
-        <span class="angle"></span>
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}

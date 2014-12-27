@@ -1,12 +1,16 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{#is "home"}}
-    <div class="home-header">
-        <h1>{{@blog.title}}</h1>
-        <h2>{{@blog.description}}</h2>
-    </div>
-{{/is}}
+<div class="home-header">
+    <h1>{{tag.name}}</h1>
+    <h2>
+        {{#if tag.description}}
+            {{tag.description}}
+        {{else}}
+            A {{pagination.total}}-post collection
+        {{/if}}
+    </h2>
+</div>
 
 {{! The main content area on the homepage }}
 <div id="content" class="content" role="main">

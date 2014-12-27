@@ -2,29 +2,23 @@ main {
     padding: 0 15px;
 }
 
+
 //
-// Angle Header & Footer Bars
+// Header & Footer borders
 // --------------------------------------------------
 
-.site-header .angle,
-.site-footer .angle {
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
+.site-header {
+    border-top: 8px solid $accent;
 }
 
-.site-header .angle {
-    border-width: 0 100vw 40px 0;
-    border-color: transparent $accent transparent transparent;
-    padding-top: 5px;
+.site-footer {
+    border-bottom: 16px solid $accent;
 }
 
-.site-footer .angle {
-    border-width: 45px 0 0 100vw;
-    border-color: transparent transparent transparent $accent;
-    padding-bottom: 5px;
-}
+
+//
+// Utilities
+// --------------------------------------------------
 
 .clearfix:after {
     content: "";
