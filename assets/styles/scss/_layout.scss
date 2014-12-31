@@ -1,18 +1,13 @@
-main {
-    padding: 0 15px;
-}
-
-
 //
-// Header & Footer borders
+// Globals
 // --------------------------------------------------
 
-.site-header {
-    border-top: 8px solid $accent;
+* {
+    box-sizing: border-box;
 }
 
-.site-footer {
-    border-bottom: 16px solid $accent;
+main {
+    padding: 0 15px;
 }
 
 
