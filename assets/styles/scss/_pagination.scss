@@ -1,7 +1,7 @@
 .pagination {
-    text-align: center;
     max-width: $content_width;
     margin: 75px auto;
+    position: relative;
 
     a {
         &:link,
@@ -41,7 +41,6 @@
     }
 
     .newer-posts {
-        float: left;
         padding-left: 40px;
         span {
             left: 0;
@@ -49,7 +48,6 @@
     }
 
     .older-posts {
-        float: right;
         padding-right: 40px;
         span {
             right: 0;
@@ -57,8 +55,31 @@
     }
 
     .page-number {
-        display: inline-block;
         line-height: 3rem;
         color: $grey_dark;
     }
+
+    @media (max-width: 499px) {
+        text-align: center;
+
+        .page-number {
+            display: block;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .newer-posts {
+            float: left;
+        }
+        .older-posts {
+            float: right;
+        }
+        .page-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
 }

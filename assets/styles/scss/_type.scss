@@ -20,10 +20,14 @@ body {
 
 @for $i from 1 through 6 {
     $header_size: nth($header_sizes, $i);
-    .h#{$i},
+    $smaller_header_size: ($header_size * 0.8);
     h#{$i}{
+        word-break: break-word;
         font-size: #{$header_size}rem;
         line-height: 1.1;
+        @media (max-width: 500px) {
+            font-size: #{$smaller_header_size}rem;
+        }
     }
 }
 
