@@ -2,6 +2,25 @@
 
 A minimal theme for Ghost
 
+* Multi-author
+* Tag pages with description
+* Author pages
+* Pagination
+* Featured posts
+* Footnotes
+
+**Coming Soon**
+
+* Prep for commenting systems
+* Cover image support for tag index, author index and single post pages
+* Syntax highlighting with [Prism](http://prismjs.com/)
+
+**Planned for the future**
+
+* Navigation (via the Navigation UI in Ghost)
+
+![Mono screenshot](http://i.imgur.com/uiPRlzB.jpg)
+
 ---
 
 ## Grunt Tasks
