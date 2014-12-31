@@ -1,5 +1,4 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{#is "home"}}
     <div class="home-header">
@@ -8,10 +7,8 @@
     </div>
 {{/is}}
 
-{{! The main content area on the homepage }}
 <div id="content" class="content" role="main">
 
-    {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}
 
 </div>

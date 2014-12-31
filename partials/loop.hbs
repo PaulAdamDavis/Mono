@@ -1,11 +1,9 @@
-{{! Previous/next page links - only displayed on page 2+ }}
 {{#is "paged"}}
     <div class="extra-pagination inner">
         {{pagination}}
     </div>
 {{/is}}
 
-{{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
     <article class="{{post_class}} loop-post">
         <header class="post-header">
@@ -18,21 +16,13 @@
             <p class="meta">
                 Dated <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do MMMM YYYY"}}</time>
                 {{tags prefix=" on "}}
+                &bull; by {{author}}
             </p>
         </header>
         <section class="post-excerpt">
             <p>{{excerpt words="50"}} <a class="read-more" href="{{url}}">&rsaquo;</a></p>
         </section>
-        {{!-- <footer class="post-meta">
-            {{#if author.image}}
-                <img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />
-            {{/if}}
-            {{author}}
-            {{tags prefix=" on "}}
-            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-        </footer> --}}
     </article>
 {{/foreach}}
 
-{{! Previous/next page links - displayed on every page }}
 {{pagination}}

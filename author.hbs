@@ -2,12 +2,12 @@
 
 {{^is "paged"}}
     <div class="home-header">
-        <h1>{{tag.name}}</h1>
+        <h1>{{author.name}}</h1>
         <h2>
-            {{#if tag.description}}
-                {{tag.description}}
+            {{#if author.bio}}
+                {{author.bio}}
             {{else}}
-                A {{pagination.total}}-post collection
+                This author has written {{plural pagination.total empty="no posts" singular="1 post" plural="% posts"}}
             {{/if}}
         </h2>
     </div>

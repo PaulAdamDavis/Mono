@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {{! Document Settings }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
 
@@ -14,11 +12,9 @@
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
-    {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "styles/css/main.css"}}" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fira+Sans:300,500">
 
-    {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
@@ -35,7 +31,6 @@
         {{/is}}
     </header>
 
-    {{! Everything else gets inserted here }}
     <main>
         {{{body}}}
     </main>
@@ -44,14 +39,12 @@
         <div class="wrapper">
             <small class="copyright"><a href="{{@blog.url}}"> &copy; {{date format="YYYY"}} {{@blog.title}}</a></small>
             <br>
-            <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></span>
+            <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a> with the <a href="https://github.com/PaulAdamDavis/Mono">Mono</a> theme</span>
         </div>
     </footer>
 
-    {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
