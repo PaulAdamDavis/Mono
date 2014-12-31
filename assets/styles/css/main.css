@@ -653,9 +653,18 @@ mark {
   /* line 31, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_footer */
   .site-footer .copyright {
     font-size: 1.4rem; }
-  /* line 35, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_footer */
-  .site-footer .poweredby {
+  /* line 36, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_footer */
+  .site-footer .poweredby, .site-footer .right a {
     font-size: 1.2rem; }
+  @media (min-width: 500px) {
+    /* line 41, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_footer */
+    .site-footer .left {
+      float: left; }
+
+    /* line 44, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_footer */
+    .site-footer .right {
+      float: right; }
+ }
 
 /* line 1, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
 .pagination {

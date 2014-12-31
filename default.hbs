@@ -36,10 +36,17 @@
     </main>
 
     <footer class="site-footer clearfix">
-        <div class="wrapper">
-            <small class="copyright"><a href="{{@blog.url}}"> &copy; {{date format="YYYY"}} {{@blog.title}}</a></small>
-            <br>
-            <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a> with the <a href="https://github.com/PaulAdamDavis/Mono">Mono</a> theme</span>
+        <div class="wrapper clearfix">
+            <div class="left">
+                <small class="copyright"><a href="{{@blog.url}}"> &copy; {{date format="YYYY"}} {{@blog.title}}</a></small>
+                <br>
+                <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a> with the <a href="https://github.com/PaulAdamDavis/Mono">Mono</a> theme</span>
+            </div>
+            <div class="right">
+                &nbsp;
+                <br>
+                <a href="{{@blog.url}}/rss/">RSS Feed</a>
+            </div>
         </div>
     </footer>
 
