@@ -62,6 +62,14 @@
     @media (max-width: 499px) {
         text-align: center;
 
+        .newer-posts {
+            margin-left: -40px;
+        }
+
+        .older-posts {
+            margin-right: -40px;
+        }
+
         .page-number {
             display: block;
         }

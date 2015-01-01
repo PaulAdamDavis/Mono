@@ -719,18 +719,24 @@ mark {
     .pagination {
       text-align: center; }
       /* line 65, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
+      .pagination .newer-posts {
+        margin-left: -40px; }
+      /* line 69, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
+      .pagination .older-posts {
+        margin-right: -40px; }
+      /* line 73, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
       .pagination .page-number {
         display: block; } }
   @media (min-width: 500px) {
-    /* line 71, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
+    /* line 79, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
     .pagination .newer-posts {
       float: left; }
 
-    /* line 74, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
+    /* line 82, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
     .pagination .older-posts {
       float: right; }
 
-    /* line 77, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
+    /* line 85, /Users/pauladamdavis/Sites/Ghost/core/Ghost/content/themes/Mono/assets/styles/scss/_pagination */
     .pagination .page-number {
       position: absolute;
       top: 50%;
