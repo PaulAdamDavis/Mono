@@ -11,6 +11,12 @@ body {
     font-size: 1.6rem;
     line-height: 1.625;
     font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+b,
+strong {
+    font-weight: 500;
 }
 
 
@@ -18,13 +24,18 @@ body {
 // Headers
 // --------------------------------------------------
 
+h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
 @for $i from 1 through 6 {
     $header_size: nth($header_sizes, $i);
     $smaller_header_size: ($header_size * 0.8);
     h#{$i}{
-        word-break: break-word;
         font-size: #{$header_size}rem;
-        line-height: 1.1;
         @media (max-width: 500px) {
             font-size: #{$smaller_header_size}rem;
         }
@@ -56,23 +67,13 @@ a {
 //
 // Lists
 // --------------------------------------------------
+
 ul, ol {
+    padding-left: 25px;
+
     ul, ol {
         margin-top: 0;
         margin-bottom: 0;
-    }
-}
-
-:target {
-  animation: target_highlight 2s ease;
-}
-
-@keyframes target_highlight {
-    from {
-        box-shadow: 0px 0px 60px 50px orange, inset 0px 0px 100px 20px orange;
-    }
-    to {
-        box-shadow: none;
     }
 }
 
@@ -105,7 +106,7 @@ p code {
 
 
 //
-// Tables - Lifted from Casper
+// Tables
 // --------------------------------------------------
 
 table {
@@ -114,45 +115,49 @@ table {
     width: 100%;
     max-width: 100%;
     background-color: transparent;
-}
 
-table th,
-table td {
-    padding: 8px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: top;
-    border-top: #EFEFEF 1px solid;
-}
+    th,
+    td {
+        padding: 8px;
+        line-height: 20px;
+        text-align: left;
+        vertical-align: top;
+        border-top: #EFEFEF 1px solid;
+    }
 
-table th { color: #000; }
+    th {
+        font-weight: 500;
+        color: #000;
+    }
 
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
-table colgroup + thead tr:first-child th,
-table colgroup + thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-    border-top: 0;
-}
+    caption + thead tr:first-child th,
+    caption + thead tr:first-child td,
+    colgroup + thead tr:first-child th,
+    colgroup + thead tr:first-child td,
+    thead:first-child tr:first-child th,
+    thead:first-child tr:first-child td {
+        border-top: 0;
+    }
 
-table tbody + tbody {
-    border-top: #EFEFEF 2px solid;
-}
+    tbody + tbody {
+        border-top: #EFEFEF 2px solid;
+    }
 
-table table table {
-    background-color: #FFF;
-}
+    table table {
+        background-color: #FFF;
+    }
 
-table tbody > tr:nth-child(odd) > td,
-table tbody > tr:nth-child(odd) > th {
-    background-color: #F6F6F6;
-}
+    tbody > tr:nth-child(odd) > td,
+    tbody > tr:nth-child(odd) > th {
+        background-color: #F6F6F6;
+    }
 
-table.plain tbody > tr:nth-child(odd) > td,
-table.plain tbody > tr:nth-child(odd) > th {
-   background: transparent;
-}
+    &.plain tbody > tr:nth-child(odd) > td,
+    &.plain tbody > tr:nth-child(odd) > th {
+       background: transparent;
+    }
+
+}//table
 
 
 //
@@ -200,4 +205,17 @@ kbd {
 
 mark {
     background: #FDFFB6;
+}
+
+:target {
+  animation: target_highlight 2s ease;
+}
+
+@keyframes target_highlight {
+    from {
+        box-shadow: 0px 0px 60px 50px orange, inset 0px 0px 100px 20px orange;
+    }
+    to {
+        box-shadow: none;
+    }
 }

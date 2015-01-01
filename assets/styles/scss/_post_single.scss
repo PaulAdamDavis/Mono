@@ -13,13 +13,7 @@
     }
     .post-header {
         margin-bottom: 5rem;
-
-        @media (max-width: ($content_width + 199)) {
-            padding-top: 4rem;
-        }
-        @media (min-width: ($content_width + 200)) {
-            padding-top: 7rem;
-        }
+        padding-top: 8rem;
     }
     .post-content {
         padding-bottom: 7rem;
