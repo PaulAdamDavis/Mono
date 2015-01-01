@@ -8,7 +8,7 @@ configureGrunt = function (grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'build/pad_mono_<%= pkg.version %>_.zip',
+                    archive: 'build/pad_mono_<%= pkg.version %>.zip',
                     mode: 'zip',
                     pretty: true
                 },
