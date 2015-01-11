@@ -8,12 +8,24 @@ A minimal theme for Ghost
 * Pagination
 * Featured posts
 * Footnotes
+* Syntax highlighting with [Prism](http://prismjs.com/) with support for:
+    * Markup (HTML)
+    * CSS (with extras)
+    * SASS/Scss
+    * Less
+    * C-like
+    * JavaScript
+    * CoffeeScript
+    * PHP (with extras)
+    * Bash
+    * Ruby
+    * Git
+    * Handlebars
 
 **Coming Soon**
 
 * Prep for commenting systems
 * Cover image support for tag index, author index and single post pages
-* Syntax highlighting with [Prism](http://prismjs.com/)
 
 **Planned for the future**
 

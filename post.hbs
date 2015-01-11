@@ -39,4 +39,9 @@
         </footer>
 
     </article>
+
+    {{#has tag="Code,code"}}
+        <script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
+    {{/has}}
+
 {{/post}}
