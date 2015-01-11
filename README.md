@@ -22,6 +22,16 @@ A minimal theme for Ghost
     * Git
     * Handlebars
 
+Try this:
+
+<pre>
+```language-scss
+div {
+   color: $red;
+}
+```
+</pre>
+
 **Coming Soon**
 
 * Prep for commenting systems
