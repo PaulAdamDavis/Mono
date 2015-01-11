@@ -41,7 +41,7 @@ div {
 
 * Navigation (via the Navigation UI in Ghost)
 
-![Mono screenshot](http://i.imgur.com/uiPRlzB.jpg)
+![Mono screenshot](http://i.imgur.com/vs0YUsm.jpg)
 
 ---
 
