@@ -27,3 +27,8 @@ $content_width: 620px;
 @import "_post_single";
 
 @import "__prism";
+
+$popover-padding-content-horizontal: 1em;
+$popover-padding-content-top: 0.7em;
+$popover-padding-content-bottom: 0.7em;
+@import "__bigfoot";

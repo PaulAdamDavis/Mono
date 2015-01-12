@@ -54,6 +54,18 @@
 
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    {{#is "post"}}
+        <script type="text/javascript" src="{{asset "js/bigfoot.min.js"}}"></script>
+        <script type="text/javascript">
+            var bigfoot = $.bigfoot(
+                {
+                    deleteOnUnhover: false,
+                    preventPageScroll: false,
+                    hoverDelay: 250
+                }
+            );
+        </script>
+    {{/is}}
 
 </body>
 </html>
