@@ -13,7 +13,7 @@
         margin: 110px auto;
     }
 
-    // Larger magins on the home page
+    // Larger margins on the home page
     body.home-template & {
         @media (max-width: ($content_width + 199)) {
             margin: 100px auto;
