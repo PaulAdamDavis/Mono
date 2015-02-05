@@ -26,21 +26,23 @@
             display: block;
             margin: 5rem auto;
             max-width: 100%;
+
             &.big {
+                max-width: inherit;
                 @media (max-width: ($content_width + 140)) {
-                    max-width: calc(100% + 30px);
+                    width: calc(100% + 30px);
                     margin-left: -15px;
                 }
                 @media (min-width: ($content_width + 140)) and (max-width: ($content_width + 239)) {
-                    max-width: calc(100% + 100px);
+                    width: calc(100% + 100px);
                     margin-left: -50px;
                 }
                 @media (min-width: ($content_width + 240)) and (max-width: ($content_width + 339)) {
-                    max-width: calc(100% + 200px);
+                    width: calc(100% + 200px);
                     margin-left: -100px;
                 }
                 @media (min-width: ($content_width + 340)) {
-                    max-width: calc(100% + 250px);
+                    width: calc(100% + 250px);
                     margin-left: -125px;
                 }
             }
