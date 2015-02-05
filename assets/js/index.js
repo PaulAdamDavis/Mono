@@ -16,6 +16,7 @@
             });
         }
 
+        // Remove 'http://' from links with the .js-remove-domain-schema class
         function no_schema_links () {
             var links = document.querySelectorAll('.js-remove-domain-schema');
             if (links) {
@@ -29,6 +30,18 @@
         }
         window.onload = function () {
             no_schema_links();
+        }
+
+        // If a post, start Bigfoot.js
+        if ($('body').hasClass('post-template')) {
+            $.bigfoot(
+                {
+                    actionOriginalFN: "ignore",
+                    deleteOnUnhover: false,
+                    preventPageScroll: false,
+                    hoverDelay: 250
+                }
+            );
         }
 
     });

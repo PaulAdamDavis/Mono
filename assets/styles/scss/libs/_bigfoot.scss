@@ -108,12 +108,13 @@ $button-right-margin:                   0.1em;                          // Margi
 $button-vertical-adjust:                -0.1em;                         // Pushes the buttons along the vertical axis to align it with text as desired
 $button-inner-circle-left-margin:       1*$button-inner-circle-size;    // Space between the ellipsis circles
 
-$button-color:                          rgb(110, 110, 110);             // Background color of the button
+// $button-color:                          rgb(110, 110, 110);             // Background color of the button
+$button-color:                          $accent;             // Background color of the button
 $button-hovered-color:                  $button-color;                  // Background color of the button when being hovered
 $button-activating-color:               $button-color;                  // Background color of the button when being clicked
 $button-active-color:                   $button-color;                  // Background color of the button when active
-$button-standard-opacity:               0.2;                            // Opacity for when the button is just sittin' there
-$button-hovered-opacity:                0.5;                            // Opacity for when the button is being hovered over
+$button-standard-opacity:               0.4;                            // Opacity for when the button is just sittin' there
+$button-hovered-opacity:                0.6;                            // Opacity for when the button is being hovered over
 $button-activating-opacity:             $button-hovered-opacity;        // Opacity for when the button is being clicked
 $button-active-opacity:                 1;                              // Opacity for when the button is active
 $button-active-style-delay:             0.1s;                           // Delay before applying .active styles; this can be used to match to the popover activation transition
