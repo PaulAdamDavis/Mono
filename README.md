@@ -8,19 +8,26 @@ A minimal theme for Ghost
 * Pagination
 * Featured posts
 * Footnotes
-* Syntax highlighting with [Prism](http://prismjs.com/) with support for:
-    * Markup (HTML)
-    * CSS (with extras)
-    * SASS/Scss
-    * Less
-    * C-like
-    * JavaScript
-    * CoffeeScript
-    * PHP (with extras)
-    * Bash
-    * Ruby
-    * Git
-    * Handlebars
+* Syntax highlighting with [Prism](http://prismjs.com/)
+
+## Syntax Highlighting
+
+Mono supports:
+
+* Bash - `bash` - `language-bash`
+* Clike - `clike` - `language-clike`
+* CoffeeScript - `coffeescript` - `language-coffeescript`
+* Css - `css` - `language-css`
+* Git - `git` - `language-git`
+* Haml - `haml` - `language-haml`
+* Handlebars - `handlebars` - `language-handlebars`
+* JavaScript - `javascript` - `language-javascript`
+* Less - `less` - `language-less`
+* Markdown - `markdown` - `language-markdown`
+* Markup - `markup` - `language-markup`
+* Php - `php` - `language-php`
+* Ruby - `ruby` - `language-ruby`
+* SCSS - `scss` - `language-scss`
 
 Try this:
 
