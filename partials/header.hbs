@@ -1,0 +1,10 @@
+{{!-- No <header> element because this needs to be manipulated by the type of page it is --}}
+{{^is "home"}}
+    {{#if @blog.logo}}
+        <a class="blog-logo" href="{{@blog.url}}" style="background-image: url({{@blog.logo}});">
+            <img src="{{@blog.logo}}" alt="Blog Logo" />
+        </a>
+    {{else}}
+        <a href="{{@blog.url}}" class="blog-link">&lsaquo; Home</a>
+    {{/if}}
+{{/is}}

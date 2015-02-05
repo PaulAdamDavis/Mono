@@ -13,6 +13,7 @@
         &:hover,
         &:focus {
             color: $grey_dark;
+
             span {
                 background: $grey_dark;
             }
@@ -42,6 +43,7 @@
 
     .newer-posts {
         padding-left: 40px;
+
         span {
             left: 0;
         }
@@ -49,6 +51,7 @@
 
     .older-posts {
         padding-right: 40px;
+
         span {
             right: 0;
         }
@@ -79,9 +82,11 @@
         .newer-posts {
             float: left;
         }
+
         .older-posts {
             float: right;
         }
+
         .page-number {
             position: absolute;
             top: 50%;
@@ -89,5 +94,4 @@
             transform: translate(-50%, -50%);
         }
     }
-
-}
+}//.pagination

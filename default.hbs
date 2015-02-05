@@ -20,15 +20,7 @@
 <body class="{{body_class}}">
 
     <header class="site-header">
-        {{^is "home"}}
-            {{#if @blog.logo}}
-                <a class="blog-logo" href="{{@blog.url}}" style="background-image: url({{@blog.logo}});">
-                    <img src="{{@blog.logo}}" alt="Blog Logo" />
-                </a>
-            {{else}}
-                <a href="{{@blog.url}}" class="blog-link">&lsaquo; Home</a>
-            {{/if}}
-        {{/is}}
+        {{> "header"}}
     </header>
 
     <main>

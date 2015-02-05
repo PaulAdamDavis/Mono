@@ -18,6 +18,7 @@
         @media (max-width: ($content_width + 199)) {
             margin: 100px auto;
         }
+
         @media (min-width: ($content_width + 200)) {
             margin: 160px auto;
         }
@@ -36,7 +37,7 @@
         color: $grey;
         margin-top: 0;
     }
-}
+}//.home-header
 
 .blog-link,
 .blog-logo {

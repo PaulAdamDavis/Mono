@@ -3,16 +3,16 @@
 
     .wrapper {
         padding-top: 20px;
+        border-top: 1px solid $grey_light;
+        line-height: 1;
 
         @media (max-width: ($content_width + 199)) {
             margin: 0 20px 40px;
         }
+
         @media (min-width: ($content_width + 200)) {
             margin: 0 50px 40px;
         }
-
-        border-top: 1px solid $grey_light;
-        line-height: 1;
     }
 
     a {
@@ -41,6 +41,7 @@
         .left {
             float: left;
         }
+
         .right {
             float: right;
         }
