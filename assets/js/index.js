@@ -33,7 +33,7 @@
         }
 
         // If a post, start Bigfoot.js
-        if ($('body').hasClass('post-template')) {
+        if ($('.footnotes').length) {
             $.bigfoot(
                 {
                     actionOriginalFN: "ignore",
@@ -42,6 +42,13 @@
                     hoverDelay: 250
                 }
             );
+        }
+
+        // // Toggle navigation class
+        if ($('.nav').length) {
+            $('.nav-toggle').on('click', function(){
+                $('.nav, .nav-toggle').toggleClass('open');
+            });
         }
 
     });

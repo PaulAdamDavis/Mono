@@ -8,6 +8,7 @@ A minimal theme for Ghost
 * Pagination
 * Featured posts
 * Footnotes
+* Navigation
 * Syntax highlighting with [Prism](http://prismjs.com/)
 
 ## Syntax Highlighting
@@ -43,10 +44,6 @@ div {
 
 * Prep for commenting systems
 * Cover image support for tag index, author index and single post pages
-
-**Planned for the future**
-
-* Navigation (via the Navigation UI in Ghost)
 
 ![Mono screenshot](http://i.imgur.com/vs0YUsm.jpg)
 
