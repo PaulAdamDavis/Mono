@@ -1,0 +1,41 @@
+@import "_vars";
+@import "_type";
+
+.site-header,
+.site-footer,
+[class*='bigfoot'],
+.footnotes a[href*='#fnref'],
+.author-image {
+    display: none;
+}
+
+body {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-header {
+    border-bottom: 1px solid $grey_light;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    .meta {
+        margin-bottom: 0;
+    }
+}
+
+.post-footer {
+    border-top: 1px solid $grey_light;
+    margin-top: 4rem;
+    padding-top: 4rem;
+
+    h4 {
+        margin-top: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 4rem auto;
+}

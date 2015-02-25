@@ -2,42 +2,8 @@
 // Mono
 //
 // All the cars & imports go here
-//
-// * Colours
-// * Header font sizes
-// * Layout
-// * Imports
 // ------------------------------------------------------------
 
-
-//
-// Colours
-// --------------------------------------------------
-
-// The main colour used for links, the header & footer bars & more
-$accent: #4A90E2;
-$accent_dark: darken($accent, 10%);
-
-// And other colours
-$black: #000000;
-$red: #CA2A66;
-$grey_dark: #9B9B9B;
-$grey: #B2B2B2;
-$grey_light: #EDEDED;
-
-
-//
-// Header font sizes
-// --------------------------------------------------
-
-$header_sizes: 3.6, 3.2, 2.9, 2.6, 2.3, 2.0; // h1-h6 in `rem`
-
-
-//
-// Layout
-// --------------------------------------------------
-
-$content_width: 620px;
 
 //
 // Imports
@@ -45,6 +11,7 @@ $content_width: 620px;
 
 @import "libs/_normalize";
 
+@import "_vars";
 @import "_layout";
 @import "_type";
 

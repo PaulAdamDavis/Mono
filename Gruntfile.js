@@ -26,7 +26,8 @@ configureGrunt = function (grunt) {
                     sourceMap: true
                 },
                 files: {
-                    'assets/styles/css/main.css': 'assets/styles/scss/main.scss'
+                    'assets/styles/css/main.css': 'assets/styles/scss/main.scss',
+                    'assets/styles/css/print.css': 'assets/styles/scss/print.scss'
                 }
             }
         },
@@ -37,9 +38,13 @@ configureGrunt = function (grunt) {
                 map: true, // Use and update the sourcemap
                 browsers: ['last 2 versions', '> 1%', 'Explorer 10']
             },
-            files: {
+            screens: {
                 src: 'assets/styles/css/main.css',
-                dest: 'assets/styles/css/main.css'
+                dest: 'assets/styles/css/main.css',
+            },
+            print: {
+                src: 'assets/styles/css/print.css',
+                dest: 'assets/styles/css/print.css',
             }
         },
 
