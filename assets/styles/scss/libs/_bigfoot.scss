@@ -103,7 +103,7 @@ $button-height:                         0.95em;                         // The t
 $button-width:                          auto;                           // The total button width (applies only if $button-apply-dimensions is true)
 $button-inner-circle-size:              0.25em;                         // Total height/width of the ellipsis circles
 $button-border-radius:                  0.3em;                          // Border radius on the button itself
-$button-left-margin:                    0.2em;                          // Margin between the button and the text to its left
+$button-left-margin:                    0.4em;                          // Margin between the button and the text to its left
 $button-right-margin:                   0.1em;                          // Margin between the button and the text to its right
 $button-vertical-adjust:                -0.1em;                         // Pushes the buttons along the vertical axis to align it with text as desired
 $button-inner-circle-left-margin:       1*$button-inner-circle-size;    // Space between the ellipsis circles

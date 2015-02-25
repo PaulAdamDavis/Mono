@@ -66,7 +66,7 @@
     top: 34px;
     right: 20px;
     padding: 0;
-    z-index: 40;
+    z-index: 200;
     font-weight: bold;
     color: $accent;
     background: transparent;
@@ -87,7 +87,7 @@
 .nav {
     transition: all 0.2s ease-in-out;
     opacity: 0;
-    transform: translateY(-100%) scale(0.5);
+    transform: translate3d(0,0,0) translateY(-100%) scale(0.5);
     background: rgba($accent, 0.95);
     position: fixed;
     top: 0;
