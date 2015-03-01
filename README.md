@@ -5,11 +5,12 @@ A minimal theme for Ghost
 * Multi-author
 * Tag pages with description
 * Author pages
+* Navigation
 * Pagination
 * Featured posts
 * Footnotes
-* Navigation
 * Syntax highlighting with [Prism](http://prismjs.com/)
+* COver images for posts & pages
 
 ## Syntax Highlighting
 
@@ -43,7 +44,7 @@ div {
 **Coming Soon**
 
 * Prep for commenting systems
-* Cover image support for tag index, author index and single post pages
+* Cover image support for tag index, author index, blog index
 
 ![Mono screenshot](http://i.imgur.com/vs0YUsm.jpg)
 

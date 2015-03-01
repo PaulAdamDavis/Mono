@@ -6,7 +6,18 @@
     background-size: cover;
     background-position: center center;
     height: 0;
-    padding-bottom: 45%;
+
+    @media (max-width: 500px) {
+        padding-bottom: 50%;
+    }
+
+    @media (min-width: 501px) and (max-width: 1500px) {
+        padding-bottom: 40%;
+    }
+
+    @media (min-width: 1501px) {
+        padding-bottom: 35%;
+    }
 
     img {
         position: absolute;
