@@ -44,6 +44,16 @@
             {{/author}}
         </footer>
 
+        <aside class="newer-older-post pagination clearfix">
+            {{#next_post}}
+                <a class="newer-posts" href="{{url}}"><span>&lsaquo;</span> Next Post</a>
+            {{/next_post}}
+            <span class="page-number">&nbsp;</span>
+            {{#prev_post}}
+                <a class="older-posts" href="{{url}}">Previous Post <span>&rsaquo;</span></a>
+            {{/prev_post}}
+        </aside>
+
     </article>
 
     {{#has tag="Code,code"}}

@@ -180,3 +180,15 @@
         }
     }//.author
 }//.single-post
+
+.newer-older-post {
+    border-top: 1px solid $grey_light;
+    padding-top: 75px;
+    max-width: 100%;
+    margin-top: 0;
+
+    @media (min-width: 500px) {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
