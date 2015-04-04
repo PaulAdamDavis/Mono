@@ -6,10 +6,9 @@
         <h1>{{tag.name}}</h1>
         <h2>
             {{#if tag.description}}
-                {{tag.description}}
-            {{else}}
-                A {{pagination.total}}-post collection
+                {{tag.description}}<br>
             {{/if}}
+            A {{pagination.total}}-post collection
         </h2>
     </div>
 {{/is}}
