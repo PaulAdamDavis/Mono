@@ -7,10 +7,11 @@ A minimal theme for Ghost
 * Author pages
 * Navigation
 * Pagination
+* Next & Previous post links
 * Featured posts
 * Footnotes
 * Syntax highlighting with [Prism](http://prismjs.com/)
-* COver images for posts & pages
+* Cover images for posts & pages
 
 ## Syntax Highlighting
 
@@ -46,14 +47,12 @@ div {
 * Prep for commenting systems
 * Cover image support for tag index, author index, blog index
 
-![Mono screenshot](http://i.imgur.com/vs0YUsm.jpg)
-
 ---
 
 ## Grunt Tasks
 
 ```
-grunt styles
+grunt dev
 ```
 
 Watches `.scss` files for changes and compiles, then runs through autoprefixer

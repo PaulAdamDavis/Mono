@@ -61,7 +61,7 @@ configureGrunt = function (grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-compress');
 
-    grunt.registerTask('styles', ['watch']);
+    grunt.registerTask('dev', ['watch']);
     grunt.registerTask('makezip', ['compress']);
 };
 
