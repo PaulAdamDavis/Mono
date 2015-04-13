@@ -1,0 +1,22 @@
+// Sorry about the specificity!
+// I just wanted this and can't be bothered
+// to rework other image stuff right now.
+.single-post .post-content img.image-left,
+.single-post .post-content img.image-right {
+     width: 100%;
+    max-width: 50%;
+    margin: 0;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0px 1px #EEE, 0 0 3px 0px #ccc;
+}
+
+.single-post .post-content img.image-left {
+    float: left;
+    margin-right: 40px;
+}
+
+.single-post .post-content img.image-right {
+    float: right;
+    margin-left: 40px;
+}

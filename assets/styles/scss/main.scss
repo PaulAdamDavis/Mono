@@ -2,18 +2,33 @@
 // Mono
 //
 // All the cars & imports go here
+//
+// * Util Libs
+// * Global vars & styles
+// * Layout
+// * Plugins
 // ------------------------------------------------------------
 
 
 //
-// Imports
+// Util Libs
 // --------------------------------------------------
 
 @import "libs/_normalize";
 
+
+//
+// Global vars & styles
+// --------------------------------------------------
+
 @import "_vars";
 @import "_layout";
 @import "_type";
+
+
+//
+// Layout
+// --------------------------------------------------
 
 @import "_header";
 @import "_footer";
@@ -22,6 +37,13 @@
 @import "_post";
 @import "_post_loop";
 @import "_post_single";
+
+@import "_utils";
+
+
+//
+// Plugins
+// --------------------------------------------------
 
 $popover-padding-content-horizontal: 1em;
 $popover-padding-content-top: 0.7em;
