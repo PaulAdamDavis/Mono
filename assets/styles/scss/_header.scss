@@ -85,7 +85,7 @@
 
 
 .nav {
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     opacity: 0;
     transform: translate3d(0,0,0) translateY(-100%) scale(0.5);
     background: rgba($accent, 0.95);
